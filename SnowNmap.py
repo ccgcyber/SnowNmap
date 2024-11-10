@@ -16,7 +16,7 @@ class FindPi:
       if 'mac' in nm[h]['addresses']:
         for x in nm[h]['vendor'].keys():
           if x.startswith('B8:27:EB'):
-            #print(nm[h]['vendor'])
+            print(nm[h]['vendor'])
             mac = (nm[h]['addresses']['mac'])
             ip = (nm[h]['addresses']['ipv4'])
             results.append([mac, ip])
